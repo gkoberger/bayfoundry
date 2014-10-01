@@ -3,16 +3,318 @@
 greyish = #eee
 
 body
-  background-color greyish
+  background-color #8ba9a9
+  font-family 'Open Sans', sans-serif
 
+.page1
+  position relative
+  .header
+    height 120px
+    margin-top -60px
+    top 40%
+    width 100%
+    text-align center
+    position absolute
+  h1
+    margin-bottom 50px
+    font-family 'EB Garamond', serif
+    font-variant small-caps
+    color #fff
+    font-size 60px
 
-.big-gulp
-  text-align center
-  img
+.logo
+  z-index 1000
+  left 50%
+  margin-left -94px
+  width 189px
+  height 32px
+  position relative
+  opacity 0.5
+  display block
+  &:hover
+    opacity 1
+
+.l-bottom
+  width 0
+  height 2px
+  background-color #fff
+  position absolute
+  bottom 0
+  left 0
+  transition 1.5s linear
+  .on &
+    width 189px
+.l-middle
+  width 0
+  height 2px
+  background-color #fff
+  bottom 10px
+  position absolute
+  transition 1.5s linear 0.4s
+  .on &
+    width 189px
+.l-pole
+  width 4px
+  height 0
+  position absolute
+  bottom 0
+  transition 0.9s linear 0.3s
+  background-position bottom left
+  background-image url(/img/bridge-pole.png)
+  background-size cover
+  .on &
+    height 32px
+  &.l-pole-1
+    left 35px
+  &.l-pole-2
+    right 35px
+    transition 0.9s linear 1.3s
+.l-rope
+  position relative
+  top 3px
+  width 0
+  transition 1.5s linear 0.8s
+  .on &
+    width 189px
+  height 18px
+  background-image url(/img/bridge-rope.png)
+  background-size cover
+  background-position top left
+
+.l-line
+  width 2px
+  bottom 12px
+  background-color #fff
+  position absolute
+  height 0
+  &.l-line1
+    left 11px
+    transition 0.5s linear 0.7s
+    .on &
+      height 4px
+  &.l-line2
+    left 16px
+    transition 0.5s linear 0.8s
+    .on &
+      height 6px
+  &.l-line3
+    left 21px
+    transition 0.5s linear 0.9s
+    .on &
+      height 8px
+  &.l-line4
+    transition 0.5s linear 1.0s
+    left 26px
+    .on &
+      height 10px
+  &.l-line5
+    transition 0.5s linear 1.1s
+    left 31px
+    .on &
+      height 12px
+
+  &.l-line6
+    transition 0.5s linear 1.3s
+    left 41px
+    .on &
+      height 13px
+
+  &.l-line7
+    transition 0.5s linear 1.4s
+    left 46px
+    .on &
+      height 11px
+
+  &.l-line8
+    transition 0.5s linear 1.5s
+    left 51px
+    .on &
+      height 9px
+
+  &.l-line9
+    transition 0.5s linear 1.6s
+    left 56px
+    .on &
+      height 7px
+
+  &.l-line10
+    transition 0.5s linear 1.7s
+    left 61px
+    .on &
+      height 6px
+
+  &.l-line11
+    transition 0.5s linear 1.8s
+    left 66px
+    .on &
+      height 5px
+
+  &.l-line12
+    transition 0.5s linear 1.8s
+    left 71px
+    .on &
+      height 4px
+
+  &.l-line13
+    transition 0.5s linear 1.5s
+    left 116px
+    .on &
+      height 4px
+  &.l-line14
+    transition 0.5s linear 1.6s
+    left 121px
+    .on &
+      height 5px
+  &.l-line15
+    transition 0.5s linear 1.7s
+    left 126px
+    .on &
+      height 6px
+  &.l-line16
+    transition 0.5s linear 1.8s
+    left 131px
+    .on &
+      height 7px
+  &.l-line17
+    transition 0.5s linear 1.9s
+    left 136px
+    .on &
+      height 8px
+  &.l-line18
+    transition 0.5s linear 2.0s
+    left 141px
+    .on &
+      height 10px
+  &.l-line19
+    transition 0.5s linear 2.1s
+    left 146px
+    .on &
+      height 12px
+  &.l-line20
+    transition 0.5s linear 2.2s
+    left 156px
+    .on &
+      height 13px
+  &.l-line21
+    transition 0.5s linear 2.3s
+    left 161px
+    .on &
+      height 11px
+  &.l-line22
+    transition 0.5s linear 2.4s
+    left 166px
+    .on &
+      height 9px
+  &.l-line23
+    transition 0.5s linear 2.5s
+    left 171px
+    .on &
+      height 6px
+
+.page2
+  background-color rgba(0,0,0,0.03)
+  .partner
+    margin 0 20px
+    background-color #fff
+    padding 30px
+    .avatar
+      width 80px
+      height 80px
+      border-radius 100px
+      background-color #eee
+      margin auto
+      background-size cover
+      background-position center center
+    &.patrick .avatar
+      background-image url(/img/patrick.png);
+    &.greg .avatar
+      background-image url(/img/greg.png);
+    &.chris .avatar
+      background-image url(/img/chris.png);
+    h2
+      color #8ba9a9
+      text-align center
+      font-weight 700
+      font-size 20px
+      margin-bottom 0
+    h3
+      font-weight 300
+      color #999
+      text-align center
+      margin-top 7px
+      font-size 15px
+    .fa
+      padding 5px
+      color #ccc
+      font-size 16px
+      &:hover
+        color #8ba9a9
+        text-decoration none
+    .center
+      text-align center
+
+.page3
+  .container
+    padding-top 120px
+    h3
+      color rgba(#fff, 0.5)
+      font-weight 300
+      font-size 25px
+    .mission
+      text-align center
+      color #fff
+      text-align center
+      max-width 600px
+      text-align center
+      margin auto
+      p
+        line-height 1.8em
+        font-size 14px
+        margin-top 20px
+    .signatures
+      width 541px
+      height 45px
+      background-image url(/img/signatures.png)
+      background-size cover
+      margin-top 40px
+  .logos
+    text-align center
+    > div
+      opacity 0.5
+      background-size contain
+      display inline-block
+      margin 0 35px
+      vertical-align middle
+      background-repeat no-repeat
+      &:hover
+        opacity 1
+    .logo-baypoint
+      width (296px / 1.5)
+      height (61px / 1.5)
+      background-image url(/img/logo-baypoint.png)
+    .logo-greylock
+      width (319px / 1.5)
+      height (41px / 1.5)
+      background-image url(/img/logo-greylock.png)
+    .logo-warriors
+      width (83px / 1.5)
+      height (101px / 1.5)
+      background-image url(/img/logo-warriors.png)
+    .logo-misfit
+      width (238px / 1.5)
+      height (90px / 1.5)
+      background-image url(/img/logo-misfit.png)
+  #hire
     display block
-    height 250px
-    margin 30px auto 20px
-  strong
-    display block
-    margin-bottom 10px
-
+    margin 70px auto
+    width 200px
+    background-color rgba(255,255,255,0.6)
+    padding 10px
+    text-align center
+    font-weight bold
+    font-size 17px
+    border-radius 5px
+    color #c2a152
+    &:hover
+      background-color #fff
+      text-decoration none

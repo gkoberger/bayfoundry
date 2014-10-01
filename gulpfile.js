@@ -23,9 +23,9 @@ var uglify_filter = gulpFilter('**/*.js', '!**/*.min.js');
 gulp.task('scripts', function() {
   console.log(paths.js);
   return gulp.src(paths.js)
-    .pipe(uglify_filter)
-    .pipe(uglify())
-    .pipe(uglify_filter.restore())
+    //.pipe(uglify_filter)
+    //.pipe(uglify())
+    //.pipe(uglify_filter.restore())
     .pipe(concat('all.min.js'))
     .pipe(gulp.dest('build/js'));
 });
@@ -53,7 +53,7 @@ gulp.task('templates', function() {
 gulp.task('images', function() {
   return gulp.src(paths.images)
     // Pass in options to the task
-    .pipe(imagemin({optimizationLevel: 5}))
+    //.pipe(imagemin({optimizationLevel: 5}))
     .pipe(gulp.dest('build/img'));
 });
 
