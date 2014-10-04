@@ -21,6 +21,18 @@ body
     font-variant small-caps
     color #fff
     font-size 60px
+  a.fa.fa-chevron-circle-down
+    font-size 40px
+    text-decoration none
+    position absolute
+    bottom 0
+    width 100%
+    left 0
+    text-align center
+    color rgba(255,255,255,0.2)
+    padding 20px
+    &:hover
+      color rgba(255,255,255,0.5)
 
 .logo
   z-index 1000
@@ -318,3 +330,29 @@ body
     &:hover
       background-color #fff
       text-decoration none
+
+.mobile
+  .page1 .header
+    position static
+    margin-top 0
+    top 0
+    height auto
+  .page
+    padding 80px 0
+    &.page1
+      height auto
+      padding 200px 0
+  .page1
+    background-color rgb(139,169,169);
+  .page2
+    background-color rgb(124,170,100);
+  .page3
+    background-color rgb(207,176,101);
+  .page3 .container .signatures
+    max-width 100%
+    background-size contain
+    background-repeat no-repeat
+  .page3 .logos > div
+    margin-bottom 25px
+  a.fa.fa-chevron-circle-down
+    display none

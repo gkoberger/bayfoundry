@@ -1,5 +1,12 @@
 (function() {
   $(window).resize(function() {
+    if($(window).width() < 600) {
+      $('body').addClass('mobile');
+      $('.page').height('auto');
+      return;
+    }
+
+    $('body').removeClass('mobile');
     var height = $(window).height() - 1;
     if(height < 700) height = 700;
     $('.page').height(height);
@@ -55,4 +62,9 @@
 
     return 'rgb(' + newColor + ')';
   }
+
+  $('.fa.fa-chevron-circle-down').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('.page2').offset().top}, 'slow');
+  });
 })();
