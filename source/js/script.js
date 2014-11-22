@@ -39,13 +39,19 @@
     var ratio = st / $(window).height();
     var page = Math.floor(ratio);
     var color1, color2;
-    if(page === 0) {
+
+    if(ratio >= 2) {
+      ratio = 1.999;
+    }
+
+    if(page <= 0) {
       color1 = 'rgb(139,169,169)';
       color2 = 'rgb(124,170,100)';
     } else {
       color1 = 'rgb(124,170,100)';
       color2 = 'rgb(207,176,101)';
     }
+
     $('body').css('background-color', fadeToColor(color1, color2, ratio % 1));
   });
 
